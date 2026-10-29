@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Mostacho's: picadas, milanesas, empanadas, pizzas, ensaladas y postres artesanales en Reconquista, Santa Fe.">
+  <title>Mostacho's | Sabor artesanal</title>
+  <link rel="icon" href="imagenes/logo-mostachos.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="estilos.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="topbar">🍕 Elaboración artesanal · Reconquista / Santa Fe · Pedí algo rico hoy</div>
+  <header class="site-header">
+    <a class="brand" href="#inicio" aria-label="Mostacho's, inicio">
+      <img src="imagenes/logo-mostachos.svg" alt="Logo de Mostacho's">
+      <span><strong>MOSTACHO'S</strong><small>SABOR ARTESANAL</small></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+    <nav class="nav" id="mainNav">
+      <a href="#menu">Nuestra carta</a>
+      <a href="#nosotros">Nosotros</a>
+      <a href="#sorteos" class="nav-raffle">🎁 Sorteos</a>
+      <a href="#contacto" class="nav-order">Hacer un pedido ↗</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-content">
+        <span class="eyebrow"><span class="dot"></span> CASERO, RICO Y ABUNDANTE</span>
+        <h1>El sabor que<br><span>te junta.</span></h1>
+        <p>Picadas para compartir, milanesas bien completas, pizzas, empanadas y algo dulce para cerrar.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#menu">Ver la carta <span>↓</span></a>
+          <a class="button button-ghost" href="#contacto">Hacer un pedido</a>
+        </div>
+        <div class="hero-note"><span class="note-star">★</span><span><b>Hecho con dedicación</b><small>Elaboración artesanal en cada pedido</small></span></div>
+      </div>
+      <div class="hero-photo">
+        <img src="imagenes/picada.jpg" alt="Picada artesanal para compartir">
+        <div class="photo-sticker"><span>BUENO</span><strong>de verdad.</strong><span>♡ HECHO EN CASA</span></div>
+        <div class="photo-caption"><span class="caption-icon">✦</span><span><b>Momentos que se disfrutan</b><small>Vos poné la compañía, nosotros la comida.</small></span></div>
+      </div>
+    </section>
+
+    <section class="category-strip" aria-label="Categorías de comida">
+      <a href="#menu">🍖 <span>Milanesas</span></a><i></i>
+      <a href="#menu">🧀 <span>Picadas</span></a><i></i>
+      <a href="#menu">🥟 <span>Empanadas</span></a><i></i>
+      <a href="#menu">🍕 <span>Pizzas</span></a><i></i>
+      <a href="#menu">🥗 <span>Ensaladas</span></a><i></i>
+      <a href="#menu">🍰 <span>Postres</span></a>
+    </section>
+
+    <section class="menu-section section-wrap" id="menu">
+      <div class="section-heading">
+        <div><span class="eyebrow">ALGO RICO TE ESTÁ ESPERANDO</span><h2>Nuestra <span>carta</span></h2></div>
+        <p>Elegí tu favorito y escribinos para consultar variedades, tamaños y precios del día.</p>
+      </div>
+      <div class="filter-row" role="group" aria-label="Filtrar carta">
+        <button class="filter-btn active" data-filter="todos">Todo</button>
+        <button class="filter-btn" data-filter="picadas">Picadas</button>
+        <button class="filter-btn" data-filter="milanesas">Milanesas</button>
+        <button class="filter-btn" data-filter="empanadas">Empanadas</button>
+        <button class="filter-btn" data-filter="pizzas">Pizzas y pizzitas</button>
+        <button class="filter-btn" data-filter="ensaladas">Ensaladas</button>
+        <button class="filter-btn" data-filter="postres">Postres</button>
+      </div>
+      <div class="food-grid">
+        <article class="food-card" data-category="picadas">
+          <div class="food-image"><img src="imagenes/picada.jpg" alt="Picada con quesos, fiambres y acompañamientos"><span class="food-tag">Para compartir</span></div>
+          <div class="food-info"><div class="food-title"><h3>Picadas</h3><span class="food-symbol">✦</span></div><p>Una selección de sabores para poner al medio y disfrutar entre todos.</p><a href="#contacto" class="food-link" data-product="Picadas">Consultar y pedir <span>↗</span></a></div>
+        </article>
+        <article class="food-card" data-category="milanesas">
+          <div class="food-image"><img src="imagenes/milanesas.jpg" alt="Milanesas crocantes con papas fritas"><span class="food-tag">Un clásico</span></div>
+          <div class="food-info"><div class="food-title"><h3>Milanesas</h3><span class="food-symbol">✦</span></div><p>Doraditas, abundantes y con acompañamientos para elegir.</p><a href="#contacto" class="food-link" data-product="Milanesas">Consultar y pedir <span>↗</span></a></div>
+        </article>
+        <article class="food-card" data-category="empanadas">
+          <div class="food-image"><img src="imagenes/empanadas.jpg" alt="Empanadas doradas recién horneadas"><span class="food-tag">Ideales para compartir</span></div>
+          <div class="food-info"><div class="food-title"><h3>Empanadas</h3><span class="food-symbol">✦</span></div><p>Una opción práctica y sabrosa para cualquier momento.</p><a href="#contacto" class="food-link" data-product="Empanadas">Consultar y pedir <span>↗</span></a></div>
+        </article>
+        <article class="food-card" data-category="pizzas">
+          <div class="food-image"><img src="imagenes/pizzitas.jpg" alt="Pizzitas con queso derretido y tomate"><span class="food-tag">Favoritas</span></div>
+          <div class="food-info"><div class="food-title"><h3>Pizzas y pizzitas</h3><span class="food-symbol">✦</span></div><p>Con queso fundido y ese aroma que abre el apetito.</p><a href="#contacto" class="food-link" data-product="Pizzas y pizzitas">Consultar y pedir <span>↗</span></a></div>
+        </article>
+        <article class="food-card" data-category="ensaladas">
+          <div class="food-image"><img src="imagenes/ensaladas.jpg" alt="Ensalada fresca y colorida"><span class="food-tag">Fresquitas</span></div>
+          <div class="food-info"><div class="food-title"><h3>Ensaladas</h3><span class="food-symbol">✦</span></div><p>Frescas, coloridas y perfectas para acompañar tu comida.</p><a href="#contacto" class="food-link" data-product="Ensaladas">Consultar y pedir <span>↗</span></a></div>
+        </article>
+        <article class="food-card" data-category="postres">
+          <div class="food-image"><img src="imagenes/postres.jpg" alt="Flan con caramelo y torta de chocolate"><span class="food-tag">Un mimo dulce</span></div>
+          <div class="food-info"><div class="food-title"><h3>Postres</h3><span class="food-symbol">✦</span></div><p>El toque dulce que no puede faltar para terminar bien.</p><a href="#contacto" class="food-link" data-product="Postres">Consultar y pedir <span>↗</span></a></div>
+        </article>
+      </div>
+      <p class="menu-disclaimer">Las imágenes son ilustrativas. Consultá por disponibilidad, variedades y precios actualizados.</p>
+    </section>
+
+    <section class="raffle-section" id="sorteos">
+      <div class="raffle-art" aria-hidden="true"><span class="confetti c1">✳</span><span class="gift">🎁</span><span class="confetti c2">✦</span><span class="confetti c3">✳</span></div>
+      <div class="raffle-copy"><span class="eyebrow">UN REGALITO PARA VOS</span><h2>¡Sumate a los <span>sorteos!</span></h2><p>Registrate con tus datos para participar de los próximos sorteos de Mostacho's. ¡Mucha suerte!</p><a class="button button-primary" href="#registro">Quiero participar <span>→</span></a><small>Leé las bases y condiciones de cada sorteo antes de participar.</small></div>
+    </section>
+
+    <section class="register-section section-wrap" id="registro">
+      <div class="register-intro"><span class="eyebrow">FORMÁ PARTE DE LA COMUNIDAD</span><h2>Tu próxima comida<br>puede venir con <span>premio.</span></h2><p>Completá el formulario para anotarte en los sorteos. Usaremos tus datos únicamente según la política de privacidad que publique el comercio.</p><div class="privacy-note"><span>🔒</span><span><b>Tus datos importan</b><small>Esta demo no envía tus datos a un servidor. Consultá la nota técnica al pie.</small></span></div></div>
+      <form class="register-form" id="registrationForm">
+        <h3>Registro para sorteos</h3><p class="form-subtitle">Los campos con * son obligatorios.</p>
+        <label for="fullName">Nombre y apellido *</label><input id="fullName" name="fullName" type="text" placeholder="Ej. Juan Pérez" autocomplete="name" required minlength="2">
+        <div class="form-two"><div><label for="phone">Celular / WhatsApp *</label><input id="phone" name="phone" type="tel" placeholder="3482 000000" autocomplete="tel" required></div><div><label for="email">Correo electrónico</label><input id="email" name="email" type="email" placeholder="tucorreo@ejemplo.com" autocomplete="email"></div></div>
+        <label for="birthday">Fecha de nacimiento (opcional)</label><input id="birthday" name="birthday" type="date">
+        <label class="consent"><input type="checkbox" id="consent" required><span>Acepto las bases del sorteo y autorizo el uso de mis datos para gestionar mi participación. *</span></label>
+        <button class="button button-primary submit-button" type="submit">Registrarme para el sorteo <span>→</span></button>
+        <p class="form-message" id="formMessage" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+
+    <section class="about-section" id="nosotros">
+      <div class="about-logo"><img src="imagenes/logo-mostachos.svg" alt="Mostacho's"></div>
+      <div><span class="eyebrow">SABOR ARTESANAL</span><h2>Hecho para compartir.</h2><p>En Mostacho's nos gusta que la comida reúna a la gente. Preparamos opciones para una cena tranqui, una juntada con amigos o una ocasión especial.</p></div>
+      <a class="button button-ghost" href="#contacto">Conocé nuestra carta</a>
+    </section>
+
+    <section class="contact-section section-wrap" id="contacto">
+      <div><span class="eyebrow">¿YA SE TE ANTOJÓ?</span><h2>Hagamos tu <span>pedido.</span></h2><p>Escribinos para consultar la carta, precios, disponibilidad y opciones de entrega.</p></div>
+      <a class="button button-primary whatsapp-button" id="whatsappLink" href="https://wa.me/5493482445291?text=Hola%20Mostacho%27s%2C%20quiero%20consultar%20la%20carta." target="_blank" rel="noopener noreferrer">Consultar por WhatsApp <span>↗</span></a>
+      <div class="contact-detail"><span>⌖</span><span><b>Reconquista, Santa Fe</b><small>Consultá zona y modalidad de entrega</small></span></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="footer-brand" href="#inicio"><img src="imagenes/logo-mostachos.svg" alt=""><span>MOSTACHO'S<small>SABOR ARTESANAL</small></span></a>
+    <p>Buenos momentos, buena comida. © <span id="year"></span> Mostacho's.</p>
+    <a href="#inicio">Volver arriba ↑</a>
+    <small class="technical-note">Sitio de demostración: el formulario solo muestra una confirmación en este dispositivo y no guarda ni transmite registros. Para administrar participantes de verdad hace falta conectar un servidor o servicio de formularios y publicar bases/privacidad.</small>
+  </footer>
+  <a class="floating-whatsapp" href="https://wa.me/5493482445291?text=Hola%20Mostacho%27s%2C%20quiero%20hacer%20un%20pedido." target="_blank" rel="noopener noreferrer" aria-label="Abrir WhatsApp">☏</a>
+</body>
+</html>
